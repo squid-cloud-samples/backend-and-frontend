@@ -1,0 +1,23 @@
+{
+  "extends": ["config:base"],
+  "automerge": true,
+  "automergeType": "pr",
+  "labels": ["dependencies"],
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["*"],
+      "enabled": false
+    },
+    {
+      "matchPackageNames": ["@squidcloud/cli", "@squidcloud/backend", "@squidcloud/client"],
+      "groupName": "Squid backend dependencies",
+      "enabled": true
+    },
+    {
+      "matchPackageNames": ["@squidcloud/client", "@squidcloud/react"],
+      "groupName": "Squid frontend dependencies",
+      "enabled": true
+    }
+  ]
+}
