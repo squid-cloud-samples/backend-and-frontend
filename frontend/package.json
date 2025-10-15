@@ -51,5 +51,7 @@
     "vite": "^7.1.5",
     "vite-plugin-svgr": "^4.3.0",
     "@squidcloud/samples": "^1.0.12"
-  }
-}
+  },
+  "overrides": {
+    "rollup": "npm:@rollup/wasm-node"
+  }}
