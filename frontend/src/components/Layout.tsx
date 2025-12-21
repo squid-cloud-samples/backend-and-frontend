@@ -7,7 +7,7 @@ export default function Layout() {
   const squid = useSquid();
   useEffect(() => {
     (window as any).squid = squid;
-  }, []);
+  }, [squid]);
   return (
     <div className={'w-full h-full flex flex-col'}>
       <Header />
