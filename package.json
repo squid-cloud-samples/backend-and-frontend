@@ -5,7 +5,8 @@
   "scripts": {
     "start": "samples start",
     "build": "npm run build --workspaces",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "lint": "npm run lint --workspaces"
   },
   "devDependencies": {
     "@squidcloud/samples": "^1.0.12",
